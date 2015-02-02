@@ -1,0 +1,1 @@
+C:\sqlite\C#\SQLiteWp8.1\SQLiteWp8.1.csproj;x86
