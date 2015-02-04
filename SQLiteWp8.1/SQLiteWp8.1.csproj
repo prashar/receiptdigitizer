@@ -93,22 +93,22 @@
     </Compile>
     <Compile Include="ContinuationManager.cs" />
     <Compile Include="Helpers\DatabaseHelperClass.cs" />
-    <Compile Include="Helpers\ReadAllContactsList.cs" />
+    <Compile Include="Helpers\ReadAllReceiptsList.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\Contacts.cs" />
+    <Compile Include="Model\Receipts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
-    <Compile Include="Views\AddConatct.xaml.cs">
-      <DependentUpon>AddConatct.xaml</DependentUpon>
+    <Compile Include="Views\AddReceipt.xaml.cs">
+      <DependentUpon>AddReceipt.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Delete_UpdateContacts.xaml.cs">
-      <DependentUpon>Delete_UpdateContacts.xaml</DependentUpon>
+    <Compile Include="Views\Delete_UpdateReceipt.xaml.cs">
+      <DependentUpon>Delete_UpdateReceipt.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ReadContactList.xaml.cs">
-      <DependentUpon>ReadContactList.xaml</DependentUpon>
+    <Compile Include="Views\ReadReceiptList.xaml.cs">
+      <DependentUpon>ReadReceiptList.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -133,15 +133,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\AddConatct.xaml">
+    <Page Include="Views\AddReceipt.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Delete_UpdateContacts.xaml">
+    <Page Include="Views\Delete_UpdateReceipt.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\ReadContactList.xaml">
+    <Page Include="Views\ReadReceiptList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

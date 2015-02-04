@@ -45,37 +45,37 @@ namespace SQLiteWp8._1.Helpers
             }
         }
 
-        // Retrieve the specific contact from the database. 
-        public Receipt ReadContact(int contactid)
+        // Retrieve the specific Receipt from the database. 
+        public Receipt ReadReceipt(int receiptId)
         {
             using (var dbConn = new SQLiteConnection(App.DB_PATH))
             {
-                var existingconact = dbConn.Query<Receipt>("select * from Contacts where Id =" + contactid).FirstOrDefault();
+                var existingconact = dbConn.Query<Receipt>("select * from Receipt where Id =" + receiptId).FirstOrDefault();
                 return existingconact;
             }
         }
-        // Retrieve the all contact list from the database. 
-        public ObservableCollection<Receipt> ReadContacts()
+        // Retrieve the all Receipt list from the database. 
+        public ObservableCollection<Receipt> ReadReceipts()
         {
             using (var dbConn = new SQLiteConnection(App.DB_PATH))
             {
                 List<Receipt> myCollection = dbConn.Table<Receipt>().ToList<Receipt>();
-                ObservableCollection<Receipt> ContactsList = new ObservableCollection<Receipt>(myCollection);
-                return ContactsList;
+                ObservableCollection<Receipt> ReceiptsList = new ObservableCollection<Receipt>(myCollection);
+                return ReceiptsList;
             }
         }
 
-        //Update existing conatct 
-        public void UpdateContact(Receipt contact)
+        //Update existing receipt 
+        public void UpdateReceipt(Receipt rpt)
         {
             using (var dbConn = new SQLiteConnection(App.DB_PATH))
             {
-                var existingconact = dbConn.Query<Receipt>("select * from Contacts where Id =" + contact.Id).FirstOrDefault();
+                var existingconact = dbConn.Query<Receipt>("select * from Receipt where Id =" + rpt.Id).FirstOrDefault();
                 if (existingconact != null)
                 {
-                    existingconact.Vendor = contact.Vendor;
-                    existingconact.Amount = contact.Amount;
-                    existingconact.CreationDate = contact.CreationDate;
+                    existingconact.Vendor = rpt.Vendor;
+                    existingconact.Amount = rpt.Amount;
+                    existingconact.CreationDate = rpt.CreationDate;
                     dbConn.RunInTransaction(() =>
                     {
                         dbConn.Update(existingconact);
@@ -83,7 +83,7 @@ namespace SQLiteWp8._1.Helpers
                 }
             }
         }
-        // Insert the new contact in the Contacts table. 
+        // Insert the new receipt in the receipts table. 
         public void Insert(Receipt newcontact)
         {
             using (var dbConn = new SQLiteConnection(App.DB_PATH))
@@ -95,12 +95,12 @@ namespace SQLiteWp8._1.Helpers
             }
         }
 
-        //Delete specific contact 
-        public void DeleteContact(int Id)
+        //Delete specific receipt 
+        public void DeleteReceipt(int Id)
         {
             using (var dbConn = new SQLiteConnection(App.DB_PATH))
             {
-                var existingconact = dbConn.Query<Receipt>("select * from Contacts where Id =" + Id).FirstOrDefault();
+                var existingconact = dbConn.Query<Receipt>("select * from Receipt where Id =" + Id).FirstOrDefault();
                 if (existingconact != null)
                 {
                     dbConn.RunInTransaction(() =>
@@ -110,8 +110,8 @@ namespace SQLiteWp8._1.Helpers
                 }
             }
         }
-        //Delete all contactlist or delete Contacts table 
-        public void DeleteAllContact()
+        //Delete all receiptlist or delete receipts table 
+        public void DeleteAllReceipts()
         {
             using (var dbConn = new SQLiteConnection(App.DB_PATH))
             {

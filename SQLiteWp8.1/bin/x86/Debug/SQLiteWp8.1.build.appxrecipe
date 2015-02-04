@@ -52,14 +52,14 @@
     <AppxPackagedFile Include="C:\sqlite\C#\SQLiteWp8.1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\sqlite\C#\SQLiteWp8.1\bin\x86\Debug\Views\AddConatct.xbf">
-      <PackagePath>Views\AddConatct.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\sqlite\C#\SQLiteWp8.1\bin\x86\Debug\Views\AddReceipt.xbf">
+      <PackagePath>Views\AddReceipt.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\sqlite\C#\SQLiteWp8.1\bin\x86\Debug\Views\Delete_UpdateContacts.xbf">
-      <PackagePath>Views\Delete_UpdateContacts.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\sqlite\C#\SQLiteWp8.1\bin\x86\Debug\Views\Delete_UpdateReceipt.xbf">
+      <PackagePath>Views\Delete_UpdateReceipt.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\sqlite\C#\SQLiteWp8.1\bin\x86\Debug\Views\ReadContactList.xbf">
-      <PackagePath>Views\ReadContactList.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\sqlite\C#\SQLiteWp8.1\bin\x86\Debug\Views\ReadReceiptList.xbf">
+      <PackagePath>Views\ReadReceiptList.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\sqlite\C#\SQLiteWp8.1\bin\x86\Debug\SQLiteWp8.1.xr.xml">
       <PackagePath>SQLiteWp8.1.xr.xml</PackagePath>

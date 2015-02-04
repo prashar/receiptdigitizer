@@ -42,7 +42,7 @@ namespace SQLiteWp8._1
         public App()
         {
             this.InitializeComponent();
-            if (!CheckFileExists("ContactsManager.sqlite").Result)
+            if (!CheckFileExists("ReceiptsManager.sqlite").Result)
             {
                 using (var db = new SQLiteConnection(DB_PATH))
                 {
@@ -163,7 +163,7 @@ namespace SQLiteWp8._1
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                if (!rootFrame.Navigate(typeof(AddConatct), e.Arguments))
+                if (!rootFrame.Navigate(typeof(ReadReceiptList), e.Arguments))
                 {
                     throw new Exception("Failed to create initial page");
                 }

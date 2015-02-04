@@ -2,8 +2,8 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="CreationDate" />
-    <RootPropertyPathName Name="PhoneNumber" />
-    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="Amount" />
+    <RootPropertyPathName Name="Vendor" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application" />
@@ -59,7 +59,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
       <RootProperty Name="Content" />
-      <RootProperty Name="IsSelected" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="FontSize" />
@@ -67,8 +66,8 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
-    <RootType FullName="SQLiteWp8._1.Views.AddConatct" />
-    <RootType FullName="SQLiteWp8._1.Views.Delete_UpdateContacts" />
+    <RootType FullName="SQLiteWp8._1.Views.AddReceipt" />
+    <RootType FullName="SQLiteWp8._1.Views.Delete_UpdateReceipt" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="Background" />
       <RootProperty Name="Margin" />
@@ -88,6 +87,6 @@
       <RootProperty Name="Child" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
-    <RootType FullName="SQLiteWp8._1.Views.ReadContactList" />
+    <RootType FullName="SQLiteWp8._1.Views.ReadReceiptList" />
   </Roots.RootTypes>
 </Roots>

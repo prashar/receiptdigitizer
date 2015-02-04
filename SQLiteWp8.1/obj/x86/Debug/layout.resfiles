@@ -7,6 +7,6 @@ Assets\WideLogo.scale-240.png
 App.xbf
 MainPage.xbf
 SQLiteWp8.1.xr.xml
-Views\AddConatct.xbf
-Views\Delete_UpdateContacts.xbf
-Views\ReadContactList.xbf
+Views\AddReceipt.xbf
+Views\Delete_UpdateReceipt.xbf
+Views\ReadReceiptList.xbf

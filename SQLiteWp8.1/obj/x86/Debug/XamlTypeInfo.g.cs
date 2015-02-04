@@ -128,17 +128,17 @@ namespace SQLiteWp8._1.SQLiteWp8_1_XamlTypeInfo
             _typeNameTable[0] = "SQLiteWp8._1.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "SQLiteWp8._1.Views.AddConatct";
-            _typeNameTable[4] = "SQLiteWp8._1.Views.Delete_UpdateContacts";
-            _typeNameTable[5] = "SQLiteWp8._1.Views.ReadContactList";
+            _typeNameTable[3] = "SQLiteWp8._1.Views.AddReceipt";
+            _typeNameTable[4] = "SQLiteWp8._1.Views.Delete_UpdateReceipt";
+            _typeNameTable[5] = "SQLiteWp8._1.Views.ReadReceiptList";
 
             _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::SQLiteWp8._1.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::SQLiteWp8._1.Views.AddConatct);
-            _typeTable[4] = typeof(global::SQLiteWp8._1.Views.Delete_UpdateContacts);
-            _typeTable[5] = typeof(global::SQLiteWp8._1.Views.ReadContactList);
+            _typeTable[3] = typeof(global::SQLiteWp8._1.Views.AddReceipt);
+            _typeTable[4] = typeof(global::SQLiteWp8._1.Views.Delete_UpdateReceipt);
+            _typeTable[5] = typeof(global::SQLiteWp8._1.Views.ReadReceiptList);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -174,9 +174,9 @@ namespace SQLiteWp8._1.SQLiteWp8_1_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::SQLiteWp8._1.MainPage(); }
-        private object Activate_3_AddConatct() { return new global::SQLiteWp8._1.Views.AddConatct(); }
-        private object Activate_4_Delete_UpdateContacts() { return new global::SQLiteWp8._1.Views.Delete_UpdateContacts(); }
-        private object Activate_5_ReadContactList() { return new global::SQLiteWp8._1.Views.ReadContactList(); }
+        private object Activate_3_AddReceipt() { return new global::SQLiteWp8._1.Views.AddReceipt(); }
+        private object Activate_4_Delete_UpdateReceipt() { return new global::SQLiteWp8._1.Views.Delete_UpdateReceipt(); }
+        private object Activate_5_ReadReceiptList() { return new global::SQLiteWp8._1.Views.ReadReceiptList(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -203,23 +203,23 @@ namespace SQLiteWp8._1.SQLiteWp8_1_XamlTypeInfo
                 xamlType = new global::SQLiteWp8._1.SQLiteWp8_1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  SQLiteWp8._1.Views.AddConatct
+            case 3:   //  SQLiteWp8._1.Views.AddReceipt
                 userType = new global::SQLiteWp8._1.SQLiteWp8_1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_AddConatct;
+                userType.Activator = Activate_3_AddReceipt;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  SQLiteWp8._1.Views.Delete_UpdateContacts
+            case 4:   //  SQLiteWp8._1.Views.Delete_UpdateReceipt
                 userType = new global::SQLiteWp8._1.SQLiteWp8_1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_Delete_UpdateContacts;
+                userType.Activator = Activate_4_Delete_UpdateReceipt;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  SQLiteWp8._1.Views.ReadContactList
+            case 5:   //  SQLiteWp8._1.Views.ReadReceiptList
                 userType = new global::SQLiteWp8._1.SQLiteWp8_1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_ReadContactList;
+                userType.Activator = Activate_5_ReadReceiptList;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
