@@ -40,7 +40,7 @@ namespace SQLiteWp8._1.Views
             DatabaseHelperClass Db_Helper = new DatabaseHelperClass();//Creating object for DatabaseHelperClass.cs from ViewModel/DatabaseHelperClass.cs 
             if (VendorBx.Text != "" & AmountBx.Text != "")
             {
-                Db_Helper.Insert(new Receipt(VendorBx.Text, AmountBx.Text));
+                Db_Helper.Insert(new Receipt(VendorBx.Text, AmountBx.Text, TaxBx.Text, ManualDatePicker.ToString(), ImageLinkBx.Text, ReceiptTypeComboBox.SelectedValue.ToString()));
                 Frame.Navigate(typeof(ReadContactList));//after add contact redirect to contact listbox page 
             }
             else

@@ -42,7 +42,7 @@ namespace SQLiteWp8._1.Views
             }
             listBoxobj.ItemsSource = DB_ContactList.OrderByDescending(i => i.Id).ToList();//Binding DB data to LISTBOX and Latest contact ID can Display first. 
         }
-        private void AddContact_Click(object sender, RoutedEventArgs e)
+        private void AddReceipt_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(AddConatct));
         }

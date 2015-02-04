@@ -28,7 +28,7 @@
                 <TextBlock FontSize="25" Text="Amount"/>
                 <TextBox InputScope="Number" Name="AmountBx" />
                 <TextBlock FontSize="25" Text="Tax"/>
-                <TextBox Name="TaxBx"/>
+                <TextBox Name="TaxBx" InputScope="Number"/>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontSize="25" Text="Date"/>
                     <DatePicker x:Name="ManualDatePicker" 
@@ -39,7 +39,7 @@
                             />
                 </StackPanel>
                 <Button HorizontalAlignment="Stretch" Content="Chose Receipt Image" Click="AddImage_Click"/>
-                <TextBox InputScope="Number" Name="ImageLinkBx" />
+                <TextBox Name="ImageLinkBx" />
                 <TextBlock FontSize="25" Text="ReceiptType"/>
                 <ComboBox x:Name="ReceiptTypeComboBox">
                     <ComboBoxItem Content="Paper Receipt" IsSelected="True"/>
